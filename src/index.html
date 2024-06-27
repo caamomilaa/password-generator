@@ -9,16 +9,41 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__title">Título</h1>
-      <p class="card__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis
-        mollitia sequi, quae voluptatem, eligendi, nam repudiandae cupiditate ad
-        consequatur natus omnis ducimus pariatur excepturi in magni voluptas
-        repellat quasi?
-      </p>
-      <a class="card__button" href="">boton</a>
+    <input id="password" type="text" class="password" placeholder="P4$5W0RD" />
+    <div class="password-generator">
+      <label id="label" class="label" for="input">Length: <span id="length-text"></span></label>
+      <input class="input" type="range" min="4" max="32" name="input" id="input" value="0" />
     </div>
+
+    <div class="password-option">
+      <span>Include Uppercase</span>
+      <div>
+        <label for="uppercase" class="check-label"></label>
+        <input type="checkbox" id="uppercase" />
+      </div>
+    </div>
+    <div class="password-option">
+      <span>Include Lowercase</span>
+      <div>
+        <label for="lowercase" class="check-label"></label>
+        <input type="checkbox" id="lowercase" />
+      </div>
+    </div>
+    <div class="password-option">
+      <span>Include Numbers</span>
+      <div>
+        <label for="numbers" class="check-label"></label>
+        <input type="checkbox" id="numbers" />
+      </div>
+    </div>
+    <div class="password-option">
+      <span>Include Symbols</span>
+      <div>
+        <label for="symbols" class="check-label"></label>
+        <input type="checkbox" id="symbols" />
+      </div>
+    </div>
+    <button class="button" id="button" value="">Generate Password</button>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
